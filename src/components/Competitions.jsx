@@ -7,7 +7,7 @@ const competitions = [
     id: 1,
     title: 'QUAD TORC',
     badge: 'NATIONAL',
-    badgeColor: 'bg-blue-500/10 text-blue-400 border-blue-500/20',
+    badgeColor: 'bg-orange-600/10 text-orange-500 border-orange-600/20',
     description: `QuadTorc, organized by ISNEE Motorsports, is a national-level off-road competition that challenges student teams to design, analyze, and fabricate an ATV in compliance with technical standards. It evaluates teams through rigorous static and dynamic rounds, including design validation, technical inspection, maneuverability, acceleration, and endurance tests.`,
     delay: 0
   },
@@ -15,7 +15,7 @@ const competitions = [
     id: 2,
     title: 'QBDC',
     badge: 'NATIONAL',
-    badgeColor: 'bg-purple-500/10 text-purple-400 border-purple-500/20',
+    badgeColor: 'bg-red-600/10 text-red-500 border-red-600/20',
     description: `The Quad Bike Design Challenge (QBDC), organized by FMAE, is a national-level competition where students design, fabricate, and test a single-rider all-terrain vehicle (ATV). It provides practical exposure to vehicle design, analysis, manufacturing, and performance evaluation while enhancing teamwork and technical skills.`,
     delay: 0.2
   },

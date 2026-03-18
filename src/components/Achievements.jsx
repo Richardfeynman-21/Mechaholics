@@ -15,12 +15,12 @@ const achievements = [
   },
   {
     id: 2,
-    icon: <Settings className="w-8 h-8 text-blue-400" />,
+    icon: <Settings className="w-8 h-8 text-orange-500" />,
     title: 'QUAD TORC 2025',
     subtitle: 'Overall Runner-Up (AIR-2)',
     desc: 'AIR-1 in Design Evaluation, Traction Test, and Business & Cost Report. AIR-2 in Kill the Hill, Acceleration Test, and Fuel Economy. Demonstrated vehicle capability and reliability under competitive conditions.',
     year: '2025',
-    color: 'from-blue-400/20 to-transparent'
+    color: 'from-orange-500/20 to-transparent'
   }
 ];
 
@@ -75,7 +75,7 @@ const Achievements = () => {
                   </span>
                 </div>
                 
-                <h3 className="text-2xl font-display font-bold tracking-widest text-white mb-2 group-hover:text-blue-400 transition-colors">
+                <h3 className="text-2xl font-display font-bold tracking-widest text-white mb-2 group-hover:text-orange-500 transition-colors">
                   {ach.title}
                 </h3>
                 <h4 className="text-sm font-semibold tracking-wide text-gray-300 mb-4 uppercase">

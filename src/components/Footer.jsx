@@ -3,9 +3,9 @@ import { Instagram, Linkedin, Youtube, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#050505] pt-24 pb-8 overflow-hidden border-t border-white/5">
+    <footer id="contact" className="relative bg-[#050505] pt-24 pb-8 overflow-hidden border-t border-white/5">
       {/* Background elements */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[1px] bg-gradient-to-r from-transparent via-blue-500/20 to-transparent"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[1px] bg-gradient-to-r from-transparent via-orange-600/20 to-transparent"></div>
       
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
@@ -24,10 +24,10 @@ const Footer = () => {
             </p>
             
             <div className="flex gap-4 mt-8">
-              <a href="https://www.instagram.com/team__mechaholics" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-pink-500 hover:bg-white/10 transition-all">
+              <a href="https://www.instagram.com/team__mechaholics" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-yellow-500 hover:bg-white/10 transition-all">
                 <Instagram size={20} />
               </a>
-              <a href="https://in.linkedin.com/company/team-mechaholics" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-blue-500 hover:bg-white/10 transition-all">
+              <a href="https://in.linkedin.com/company/team-mechaholics" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-orange-600 hover:bg-white/10 transition-all">
                 <Linkedin size={20} />
               </a>
               <a href="https://youtube.com/@team_mechaholics" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-red-500 hover:bg-white/10 transition-all">
@@ -42,7 +42,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {['About Us', 'Competitions', 'Achievements', 'Team', 'Sponsors'].map((link) => (
                 <li key={link}>
-                  <a href={`#${link.toLowerCase().replace(' ', '')}`} className="text-gray-400 hover:text-blue-400 transition-colors inline-block hover:translate-x-1 transform duration-300">
+                  <a href={`#${link.toLowerCase().replace(' ', '')}`} className="text-gray-400 hover:text-orange-500 transition-colors inline-block hover:translate-x-1 transform duration-300">
                     {link}
                   </a>
                 </li>
@@ -55,13 +55,13 @@ const Footer = () => {
             <h4 className="font-display font-bold text-lg tracking-wider text-white mb-6">CONTACT US</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-blue-500 mt-1 flex-shrink-0" />
+                <Mail className="w-5 h-5 text-orange-600 mt-1 flex-shrink-0" />
                 <a href="mailto:team_mechaholics@nitw.ac.in" className="text-gray-400 hover:text-white transition-colors break-all">
                   team_mechaholics@nitw.ac.in
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-blue-500 mt-1 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-orange-600 mt-1 flex-shrink-0" />
                 <p className="text-gray-400">
                   National Institute of Technology,<br />
                   Warangal, Telangana,<br />

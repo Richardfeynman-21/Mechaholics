@@ -54,7 +54,7 @@ const Team = () => {
   return (
     <section id="team" className="py-24 bg-[#050505] relative overflow-hidden">
       {/* Decorative Blur */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-900/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-orange-900/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <SectionHeader 
@@ -89,7 +89,7 @@ const Team = () => {
             <span className={`transform transition-transform duration-300 ${showTeam ? 'rotate-180' : ''}`}>
               <ChevronDown size={18} />
             </span>
-            <div className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-transparent via-orange-600 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
           </button>
         </div>
 
@@ -108,10 +108,10 @@ const Team = () => {
                 {/* Faculty & Leadership */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                   <div className="space-y-6">
-                    <h3 className="text-xl font-display font-semibold text-blue-400 tracking-widest border-b border-white/10 pb-4">FACULTY ADVISORS</h3>
+                    <h3 className="text-xl font-display font-semibold text-orange-500 tracking-widest border-b border-white/10 pb-4">FACULTY ADVISORS</h3>
                     <div className="grid grid-cols-2 gap-4">
                       {teamData.faculty.map(f => (
-                        <div key={f.name} className="glass p-6 rounded-2xl border-l-4 border-l-blue-500 hover:bg-white/10 transition-colors">
+                        <div key={f.name} className="glass p-6 rounded-2xl border-l-4 border-l-orange-600 hover:bg-white/10 transition-colors">
                           <h4 className="text-white font-medium">{f.name}</h4>
                           <p className="text-xs text-gray-400 uppercase tracking-widest mt-1">{f.role}</p>
                         </div>
@@ -120,7 +120,7 @@ const Team = () => {
                   </div>
 
                   <div className="space-y-6">
-                    <h3 className="text-xl font-display font-semibold text-purple-400 tracking-widest border-b border-white/10 pb-4">CORE LEADERSHIP</h3>
+                    <h3 className="text-xl font-display font-semibold text-red-500 tracking-widest border-b border-white/10 pb-4">CORE LEADERSHIP</h3>
                     <div className="grid grid-cols-2 gap-4">
                       {teamData.leadership.map(l => (
                         <div key={l.name} className="glass p-6 rounded-2xl hover:bg-white/10 transition-colors group">
@@ -146,13 +146,13 @@ const Team = () => {
                       >
                         <h4 className="text-lg font-display font-bold text-white tracking-widest mb-6 inline-flex flex-col">
                           {dept.name}
-                          <span className="w-1/2 h-0.5 bg-blue-500 mt-2"></span>
+                          <span className="w-1/2 h-0.5 bg-orange-600 mt-2"></span>
                         </h4>
                         
                         <div className="space-y-4">
                           <div className="mb-4">
                             <p className="text-white font-medium">{dept.head}</p>
-                            <p className="text-xs text-blue-400 uppercase tracking-widest font-semibold">Head</p>
+                            <p className="text-xs text-orange-500 uppercase tracking-widest font-semibold">Head</p>
                           </div>
                           
                           <div className="space-y-2">

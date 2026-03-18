@@ -8,10 +8,12 @@ import Achievements from './components/Achievements';
 import Team from './components/Team';
 import Sponsors from './components/Sponsors';
 import Footer from './components/Footer';
+import ParticlesBackground from './components/ParticlesBackground';
 
 function App() {
   return (
-    <div className="bg-background min-h-screen text-foreground font-sans">
+    <div className="bg-background min-h-screen text-foreground font-sans relative">
+      <ParticlesBackground />
       <Navbar />
       <main>
         <Hero />
@@ -21,7 +23,7 @@ function App() {
           <div className="container mx-auto px-6 lg:px-12 text-center">
             <h2 className="text-3xl font-display font-bold text-white tracking-widest mb-12">OUR MACHINE IN MOTION</h2>
             <div className="max-w-5xl mx-auto rounded-3xl overflow-hidden glass-card shadow-[0_0_50px_rgba(59,130,246,0.15)] relative">
-              <div className="absolute inset-0 bg-blue-500/10 pointer-events-none mix-blend-overlay" />
+              <div className="absolute inset-0 bg-orange-600/10 pointer-events-none mix-blend-overlay" />
               <video 
                 controls 
                 autoPlay 
@@ -44,7 +46,7 @@ function App() {
 
         {/* Support Section */}
         <section className="py-24 bg-[#0a0a0a] relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-black to-purple-900/10" />
+          <div className="absolute inset-0 bg-gradient-to-br from-orange-900/10 via-black to-red-900/10" />
           <div className="container mx-auto px-6 lg:px-12 relative z-10 text-center">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white tracking-widest mb-6">SUPPORT THE REVOLUTION</h2>
             <p className="text-gray-400 max-w-2xl mx-auto mb-12 font-light text-lg">

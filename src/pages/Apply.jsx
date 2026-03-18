@@ -7,6 +7,8 @@ const Apply = () => {
   const navigate = useNavigate();
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [team, setTeam] = useState('');
+  const [subteam, setSubteam] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,10 +22,10 @@ const Apply = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#050505] relative overflow-hidden text-white font-sans selection:bg-blue-500/30">
+    <div className="min-h-screen bg-[#050505] relative overflow-hidden text-white font-sans selection:bg-orange-600/30">
       {/* Animated Background */}
-      <div className="absolute top-0 right-0 w-full h-[500px] bg-gradient-to-b from-blue-900/20 to-transparent pointer-events-none" />
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-[120px] mix-blend-screen animate-blob pointer-events-none" />
+      <div className="absolute top-0 right-0 w-full h-[500px] bg-gradient-to-b from-orange-900/20 to-transparent pointer-events-none" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-red-600/10 rounded-full blur-[120px] mix-blend-screen animate-blob pointer-events-none" />
 
       {/* Nav */}
       <nav className="relative z-50 py-6 px-6 lg:px-12 flex justify-between items-center border-b border-white/5">
@@ -51,12 +53,12 @@ const Apply = () => {
           transition={{ duration: 0.8 }}
           className="lg:w-5/12 max-w-xl"
         >
-          <div className="inline-block px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-bold tracking-widest mb-6 uppercase">
+          <div className="inline-block px-4 py-1.5 rounded-full border border-orange-600/30 bg-orange-600/10 text-orange-500 text-xs font-bold tracking-widest mb-6 uppercase">
             Recruitment 2026
           </div>
           <h1 className="text-5xl md:text-7xl font-display font-bold tracking-tighter mb-6 leading-[1.1]">
             JOIN THE<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">
               REVOLUTION
             </span>
           </h1>
@@ -66,7 +68,7 @@ const Apply = () => {
 
           <div className="space-y-6">
             <div className="glass-card p-6 rounded-2xl flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center shrink-0 border border-blue-500/30">
+              <div className="w-12 h-12 rounded-full bg-orange-600/20 flex items-center justify-center shrink-0 border border-orange-600/30">
                 <span className="text-xl">🚀</span>
               </div>
               <div>
@@ -76,7 +78,7 @@ const Apply = () => {
             </div>
             
             <div className="glass-card p-6 rounded-2xl flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center shrink-0 border border-purple-500/30">
+              <div className="w-12 h-12 rounded-full bg-red-600/20 flex items-center justify-center shrink-0 border border-red-600/30">
                 <span className="text-xl">🛠️</span>
               </div>
               <div>
@@ -97,7 +99,7 @@ const Apply = () => {
           <div className="glass-card rounded-3xl p-8 md:p-12 border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)] relative overflow-hidden backdrop-blur-2xl bg-white/[0.02]">
             
             {/* Form Glow */}
-            <div className="absolute -top-32 -right-32 w-64 h-64 bg-blue-500/20 rounded-full blur-[100px] pointer-events-none" />
+            <div className="absolute -top-32 -right-32 w-64 h-64 bg-orange-600/20 rounded-full blur-[100px] pointer-events-none" />
 
             {submitted ? (
               <motion.div 
@@ -137,7 +139,7 @@ const Apply = () => {
                     <input 
                       type="text" 
                       required
-                      className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all font-light"
+                      className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-600 focus:ring-1 focus:ring-orange-600 transition-all font-light"
                       placeholder="John Doe"
                     />
                   </div>
@@ -146,7 +148,7 @@ const Apply = () => {
                     <input 
                       type="text" 
                       required
-                      className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all font-light uppercase"
+                      className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-600 focus:ring-1 focus:ring-orange-600 transition-all font-light uppercase"
                       placeholder="23ME1001"
                     />
                   </div>
@@ -157,7 +159,7 @@ const Apply = () => {
                   <input 
                     type="email" 
                     required
-                    className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all font-light"
+                    className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-600 focus:ring-1 focus:ring-orange-600 transition-all font-light"
                     placeholder="student@student.nitw.ac.in"
                   />
                 </div>
@@ -165,7 +167,7 @@ const Apply = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-xs uppercase tracking-widest text-gray-400 font-semibold ml-1">Branch</label>
-                    <select required className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all font-light appearance-none cursor-pointer">
+                    <select required className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-600 focus:ring-1 focus:ring-orange-600 transition-all font-light appearance-none cursor-pointer">
                       <option value="" disabled selected>Select Branch</option>
                       <option value="Mechanical">Mechanical Engineering</option>
                       <option value="CSE">Computer Science</option>
@@ -178,7 +180,7 @@ const Apply = () => {
                   </div>
                   <div className="space-y-2">
                     <label className="text-xs uppercase tracking-widest text-gray-400 font-semibold ml-1">Year of Study</label>
-                    <select required className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all font-light appearance-none cursor-pointer">
+                    <select required className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-600 focus:ring-1 focus:ring-orange-600 transition-all font-light appearance-none cursor-pointer">
                       <option value="" disabled selected>Select Year</option>
                       <option value="1">1st Year</option>
                       <option value="2">2nd Year</option>
@@ -187,24 +189,47 @@ const Apply = () => {
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <label className="text-xs uppercase tracking-widest text-gray-400 font-semibold ml-1">Preferred Department</label>
-                  <select required className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all font-light appearance-none cursor-pointer">
-                    <option value="" disabled selected>Select Core Team</option>
-                    <option value="powertrain">Powertrain</option>
-                    <option value="suspension">Suspension</option>
-                    <option value="design">Design & Analysis</option>
-                    <option value="steering">Steering</option>
-                    <option value="braking">Braking</option>
-                    <option value="management">Management</option>
-                  </select>
+                {/* Team Preference */}
+                <div className="space-y-4">
+                  <label className="text-xs uppercase tracking-widest text-gray-400 font-semibold ml-1">Team Preference</label>
+                  <div className="grid grid-cols-2 gap-4">
+                    <label className={`cursor-pointer w-full text-center py-4 rounded-xl border transition-all ${team === 'HBaja' ? 'bg-orange-600/10 border-orange-600 text-orange-500 font-bold shadow-[0_0_15px_rgba(255,107,0,0.3)]' : 'bg-black/40 border-white/10 text-gray-400 hover:border-gray-500'}`}>
+                      <input type="radio" name="team" value="HBaja" className="hidden" required onChange={(e) => { setTeam(e.target.value); setSubteam(''); }} />
+                      HBaja
+                    </label>
+                    <label className={`cursor-pointer w-full text-center py-4 rounded-xl border transition-all ${team === 'Inspace' ? 'bg-orange-600/10 border-orange-600 text-orange-500 font-bold shadow-[0_0_15px_rgba(255,107,0,0.3)]' : 'bg-black/40 border-white/10 text-gray-400 hover:border-gray-500'}`}>
+                      <input type="radio" name="team" value="Inspace" className="hidden" required onChange={(e) => { setTeam(e.target.value); setSubteam(''); }} />
+                      Inspace
+                    </label>
+                  </div>
                 </div>
+
+                {/* Sub-Branch */}
+                {team && (
+                  <div className="space-y-4 animate-[fadeInUp_0.3s_ease]">
+                    <label className="text-xs uppercase tracking-widest text-gray-400 font-semibold ml-1">Sub-Branch / Domain</label>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-3 flex-wrap">
+                      {team === 'HBaja' && ['Powertrain', 'Design', 'Vehicle Dynamics', 'Braking', 'Electrical', 'Management'].map(opt => (
+                        <label key={opt} className={`cursor-pointer w-full text-center py-3 rounded-lg border text-sm transition-all ${subteam === opt ? 'bg-orange-600/10 border-orange-600 text-orange-500 font-bold shadow-[0_0_10px_rgba(255,107,0,0.2)]' : 'bg-black/40 border-white/10 text-gray-400 hover:border-orange-600/50'}`}>
+                          <input type="radio" name="subteam" value={opt} className="hidden" required onChange={(e) => setSubteam(e.target.value)} />
+                          {opt}
+                        </label>
+                      ))}
+                      {team === 'Inspace' && ['Electronics', 'Mechanical'].map(opt => (
+                        <label key={opt} className={`cursor-pointer w-full text-center py-3 rounded-lg border text-sm transition-all ${subteam === opt ? 'bg-orange-600/10 border-orange-600 text-orange-500 font-bold shadow-[0_0_10px_rgba(255,107,0,0.2)]' : 'bg-black/40 border-white/10 text-gray-400 hover:border-orange-600/50'}`}>
+                          <input type="radio" name="subteam" value={opt} className="hidden" required onChange={(e) => setSubteam(e.target.value)} />
+                          {opt}
+                        </label>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 <div className="space-y-2 mt-4 pt-6 border-t border-white/10">
                   <button 
                     type="submit" 
                     disabled={loading}
-                    className="w-full py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl text-white font-bold tracking-widest uppercase hover:opacity-90 transition-opacity flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(59,130,246,0.3)] disabled:opacity-50"
+                    className="w-full py-4 bg-gradient-to-r from-orange-600 to-red-600 rounded-xl text-white font-bold tracking-widest uppercase hover:opacity-90 transition-opacity flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(59,130,246,0.3)] disabled:opacity-50"
                   >
                     {loading ? (
                       <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>

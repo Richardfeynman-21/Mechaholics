@@ -56,7 +56,7 @@ const TimelineCard = ({ item, index }) => {
     >
       {/* Center Line Marker */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center">
-        <div className={`w-6 h-6 rounded-full border-4 border-black ${item.highlight ? 'bg-green-500 shadow-[0_0_15px_rgba(34,197,94,0.6)]' : 'bg-blue-500'} z-10`} />
+        <div className={`w-6 h-6 rounded-full border-4 border-black ${item.highlight ? 'bg-green-500 shadow-[0_0_15px_rgba(34,197,94,0.6)]' : 'bg-orange-600'} z-10`} />
       </div>
 
       <div className="hidden md:block w-5/12" />
@@ -110,7 +110,7 @@ const Timeline = () => {
           <div className="absolute left-1/2 top-0 bottom-0 w-[2px] -translate-x-1/2 bg-white/10 overflow-hidden">
             <motion.div 
               style={{ scaleY, transformOrigin: 'top' }}
-              className="w-full h-full bg-gradient-to-b from-blue-500 via-purple-500 to-green-500 shadow-[0_0_15px_rgba(59,130,246,0.5)]" 
+              className="w-full h-full bg-gradient-to-b from-orange-600 via-red-600 to-green-500 shadow-[0_0_15px_rgba(59,130,246,0.5)]" 
             />
           </div>
 

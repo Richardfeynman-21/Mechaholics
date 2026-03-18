@@ -4,8 +4,8 @@
 @theme {
   --color-background: #0a0a0a;
   --color-foreground: #ffffff;
-  --color-primary: #3b82f6;
-  --color-accent: #8b5cf6;
+  --color-primary: #FF6B00;
+  --color-accent: #E85D00;
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-display: 'Rajdhani', sans-serif;
   --animate-blob: blob 7s infinite;
@@ -24,6 +24,23 @@
       transform: translate(0px, 0px) scale(1);
     }
   }
+
+  @keyframes fpFloat {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.4;
+    }
+    90% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
+  }
 }
 
 body {
@@ -40,7 +57,7 @@ body {
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#FF6B00] via-[#FF8C00] to-[#E85D00];
   }
 }
 

@@ -41,8 +41,8 @@ const Hero = () => {
         />
         
         {/* Animated Glow Effects */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-[120px] mix-blend-screen animate-blob" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-[120px] mix-blend-screen animate-blob" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-600/20 rounded-full blur-[120px] mix-blend-screen animate-blob" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-red-600/20 rounded-full blur-[120px] mix-blend-screen animate-blob" style={{ animationDelay: '2s' }} />
       </motion.div>
 
       {/* Content */}
@@ -57,7 +57,7 @@ const Hero = () => {
           className="mb-8 inline-block"
         >
           <div className="glass px-6 py-2 rounded-full border border-white/10 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-            <span className="text-sm font-medium tracking-widest text-blue-400">NIT WARANGAL OFFICIAL TEAM</span>
+            <span className="text-sm font-medium tracking-widest text-orange-500">NIT WARANGAL OFFICIAL TEAM</span>
           </div>
         </motion.div>
 
@@ -69,7 +69,7 @@ const Hero = () => {
         >
           TEAM
           <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-white">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-red-500 to-white">
             MECHAHOLICS
           </span>
         </motion.h1>

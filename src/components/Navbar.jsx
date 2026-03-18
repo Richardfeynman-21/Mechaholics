@@ -52,7 +52,7 @@ const Navbar = () => {
               className="text-sm font-medium tracking-wider text-gray-300 hover:text-white transition-colors relative group"
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
           <a
@@ -89,7 +89,7 @@ const Navbar = () => {
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-2xl font-display font-semibold tracking-widest text-white hover:text-blue-400 transition-colors"
+                className="text-2xl font-display font-semibold tracking-widest text-white hover:text-orange-500 transition-colors"
               >
                 {link.name}
               </motion.a>
@@ -100,7 +100,7 @@ const Navbar = () => {
                 transition={{ delay: navLinks.length * 0.1 }}
                 href="/apply"
                 onClick={() => setMobileMenuOpen(false)}
-                className="mt-4 px-8 py-3 rounded-full bg-blue-600 text-white font-semibold text-lg hover:bg-blue-700 transition-colors shadow-[0_0_20px_rgba(37,99,235,0.4)]"
+                className="mt-4 px-8 py-3 rounded-full bg-orange-600 text-white font-semibold text-lg hover:bg-blue-700 transition-colors shadow-[0_0_20px_rgba(37,99,235,0.4)]"
             >
               APPLY NOW
             </motion.a>

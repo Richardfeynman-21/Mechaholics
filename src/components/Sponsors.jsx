@@ -27,7 +27,7 @@ const Sponsors = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               whileHover={{ y: -5, scale: 1.05 }}
-              className="glass p-8 rounded-3xl border border-white/5 hover:border-blue-500/30 transition-all flex flex-col items-center gap-6 w-full sm:w-64 bg-white/[0.02]"
+              className="glass p-8 rounded-3xl border border-white/5 hover:border-orange-600/30 transition-all flex flex-col items-center gap-6 w-full sm:w-64 bg-white/[0.02]"
             >
               <div className="h-24 w-full flex items-center justify-center bg-white rounded-xl overflow-hidden p-2">
                 <img 

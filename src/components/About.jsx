@@ -6,8 +6,8 @@ const About = () => {
   return (
     <section id="about" className="py-24 bg-[#0a0a0a] relative overflow-hidden">
       {/* Decorative Gradients */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-900/10 to-transparent blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-1/2 h-full bg-gradient-to-r from-purple-900/10 to-transparent blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-orange-900/10 to-transparent blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-1/2 h-full bg-gradient-to-r from-red-900/10 to-transparent blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <SectionHeader 
@@ -50,7 +50,7 @@ const About = () => {
                   key={stat.label}
                   className="text-center group"
                 >
-                  <div className="text-3xl md:text-5xl font-display font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  <div className="text-3xl md:text-5xl font-display font-bold text-white mb-2 group-hover:text-orange-500 transition-colors">
                     {stat.number}
                   </div>
                   <div className="text-xs uppercase tracking-widest text-gray-500 font-medium">
@@ -69,7 +69,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="grid grid-cols-2 gap-4 relative"
           >
-            <div className="absolute inset-0 bg-blue-500/20 blur-3xl -z-10 rounded-full" />
+            <div className="absolute inset-0 bg-orange-600/20 blur-3xl -z-10 rounded-full" />
             
             <motion.div whileHover={{ scale: 1.05 }} className="col-span-1 rounded-2xl overflow-hidden glass-card">
               <img src="/assets/mechaholics_img1.jpeg" alt="Quad Bike 1" className="w-full h-48 md:h-64 object-cover" />

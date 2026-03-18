@@ -6,37 +6,37 @@ import { ChevronDown } from 'lucide-react';
 const timelineData = [
   {
     year: '2017',
-    image: '/assets/2017.jpg',
+    image: `${import.meta.env.BASE_URL}assets/2017.jpg`,
     title: 'THE BEGINNING',
     desc: "Built our first ATV for QuadTorc, marking the institute's first attempt at such a project. Provided valuable experience in design, fabrication, and teamwork.",
   },
   {
     year: '2018',
-    image: '/assets/2018_2.jpg',
+    image: `${import.meta.env.BASE_URL}assets/2018_2.jpg`,
     title: 'QBDC DEBUT',
     desc: 'Designed and built an ATV to compete in QBDC. Achieved AIR 10 and 1st Rank in the Cost Report.',
   },
   {
     year: '2019',
-    image: '/assets/2019.jpg',
+    image: `${import.meta.env.BASE_URL}assets/2019.jpg`,
     title: 'RISING RANKS',
     desc: 'Participated in QBDC. Achieved Overall AIR 7, Runner-Up in Traction Test, and AIR 3 in Cost Report.',
   },
   {
     year: '2020',
-    image: '/assets/mechaholics_img2.jpeg',
+    image: `${import.meta.env.BASE_URL}assets/mechaholics_img2.jpeg`,
     title: 'PERSEVERANCE',
     desc: 'Continued working on QBDC despite challenges. Focused on extensive design, fabrication, and testing, building technical excellence.',
   },
   {
     year: '2025',
-    image: '/assets/mechaholics_img1.jpeg',
+    image: `${import.meta.env.BASE_URL}assets/mechaholics_img1.jpeg`,
     title: 'EXCELLENCE ACHIVED',
     desc: 'Outstanding performance at QuadTorc, securing Overall Runner-Up (AIR-2). Also achieved AIR-1 in Design Evaluation and Traction Test.',
   },
   {
     year: '2026',
-    image: '/assets/mechaholics_img2.jpeg',
+    image: `${import.meta.env.BASE_URL}assets/mechaholics_img2.jpeg`,
     title: 'HYDROGEN REVOLUTION',
     desc: 'Transitioning to hydrogen fuel cell technology, pioneering the future of clean energy in motorsports.',
     highlight: true,

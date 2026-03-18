@@ -37,8 +37,8 @@ const Navbar = () => {
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 relative z-50">
-          <img src="/assets/mechaholics_logo22.PNG" alt="NITW" className="h-10 w-auto" />
-          <img src="/assets/Mechaholics_logo_draft.png" alt="Logo" className="h-10 w-auto" />
+          <img src={`${import.meta.env.BASE_URL}assets/mechaholics_logo22.PNG`} alt="NITW" className="h-10 w-auto" />
+          <img src={`${import.meta.env.BASE_URL}assets/Mechaholics_logo_draft.png`} alt="Logo" className="h-10 w-auto" />
           <span className="font-display font-bold text-2xl tracking-widest hidden sm:block text-white">
             MECHAHOLICS
           </span>

@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import SectionHeader from './SectionHeader';
 
 const sponsors = [
-  { name: 'SolidWorks', logo: '/assets/SolidWorks-Logo.jpeg' },
-  { name: 'Ansys', logo: '/assets/ansyslogo.jpeg' },
-  { name: 'Matlab', logo: '/assets/Matlab_Google.jpeg' }
+  { name: 'SolidWorks', logo: `${import.meta.env.BASE_URL}assets/SolidWorks-Logo.jpeg` },
+  { name: 'Ansys', logo: `${import.meta.env.BASE_URL}assets/ansyslogo.jpeg` },
+  { name: 'Matlab', logo: `${import.meta.env.BASE_URL}assets/Matlab_Google.jpeg` }
 ];
 
 const Sponsors = () => {

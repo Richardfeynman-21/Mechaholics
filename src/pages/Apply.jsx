@@ -37,7 +37,7 @@ const Apply = () => {
           <span className="font-semibold tracking-wide text-sm">RETURN TO HOME</span>
         </button>
         <div className="flex items-center gap-3">
-          <img src="/assets/Mechaholics_logo_draft.png" alt="Logo" className="h-8 w-auto" />
+          <img src={`${import.meta.env.BASE_URL}assets/Mechaholics_logo_draft.png`} alt="Logo" className="h-8 w-auto" />
           <span className="font-display font-bold text-xl tracking-widest hidden sm:block">
             MECHAHOLICS
           </span>

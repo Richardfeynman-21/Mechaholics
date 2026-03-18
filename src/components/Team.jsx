@@ -73,7 +73,7 @@ const Team = () => {
         >
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
           <img 
-            src="/assets/mechaholics_img1.jpeg" 
+            src={`${import.meta.env.BASE_URL}assets/mechaholics_img1.jpeg`} 
             alt="Team Mechaholics" 
             className="w-full h-[400px] md:h-[600px] object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700"
           />

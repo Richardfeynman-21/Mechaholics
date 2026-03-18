@@ -31,7 +31,7 @@ function App() {
                 loop 
                 className="w-full h-auto aspect-video object-cover"
               >
-                <source src="/assets/video.mp4" type="video/mp4" />
+                <source src={`${import.meta.env.BASE_URL}assets/video.mp4`} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>

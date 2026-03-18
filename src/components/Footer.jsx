@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="col-span-1 lg:col-span-2">
             <div className="flex items-center gap-4 mb-6">
-              <img src="/assets/Mechaholics_logo_draft.png" alt="Team Mechaholics" className="h-16 w-auto" />
+              <img src={`${import.meta.env.BASE_URL}assets/Mechaholics_logo_draft.png`} alt="Team Mechaholics" className="h-16 w-auto" />
               <div>
                 <h3 className="font-display font-bold text-2xl tracking-widest text-white">TEAM MECHAHOLICS</h3>
                 <p className="text-gray-400 text-sm mt-1">Official Quad Bike Team of NIT Warangal</p>

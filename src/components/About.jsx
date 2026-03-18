@@ -72,19 +72,19 @@ const About = () => {
             <div className="absolute inset-0 bg-orange-600/20 blur-3xl -z-10 rounded-full" />
             
             <motion.div whileHover={{ scale: 1.05 }} className="col-span-1 rounded-2xl overflow-hidden glass-card">
-              <img src="/assets/mechaholics_img1.jpeg" alt="Quad Bike 1" className="w-full h-48 md:h-64 object-cover" />
+              <img src={`${import.meta.env.BASE_URL}assets/mechaholics_img1.jpeg`} alt="Quad Bike 1" className="w-full h-48 md:h-64 object-cover" />
             </motion.div>
             
             <motion.div whileHover={{ scale: 1.05 }} className="col-span-1 rounded-2xl overflow-hidden glass-card mt-8">
-              <img src="/assets/mechaholics_img2.jpeg" alt="Quad Bike 2" className="w-full h-48 md:h-64 object-cover" />
+              <img src={`${import.meta.env.BASE_URL}assets/mechaholics_img2.jpeg`} alt="Quad Bike 2" className="w-full h-48 md:h-64 object-cover" />
             </motion.div>
             
             <motion.div whileHover={{ scale: 1.05 }} className="col-span-1 rounded-2xl overflow-hidden glass-card -mt-8">
-              <img src="/assets/mechaholics_img3.jpeg" alt="Quad Bike 3" className="w-full h-48 md:h-64 object-cover" />
+              <img src={`${import.meta.env.BASE_URL}assets/mechaholics_img3.jpeg`} alt="Quad Bike 3" className="w-full h-48 md:h-64 object-cover" />
             </motion.div>
             
             <motion.div whileHover={{ scale: 1.05 }} className="col-span-1 rounded-2xl overflow-hidden glass-card">
-              <img src="/assets/mechaholics_img4.jpeg" alt="Quad Bike 4" className="w-full h-48 md:h-64 object-cover" />
+              <img src={`${import.meta.env.BASE_URL}assets/mechaholics_img4.jpeg`} alt="Quad Bike 4" className="w-full h-48 md:h-64 object-cover" />
             </motion.div>
           </motion.div>
 

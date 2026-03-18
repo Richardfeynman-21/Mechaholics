@@ -35,7 +35,7 @@ const Hero = () => {
         {/* We'll use a dynamic dark gradient overlay on top of the image */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-background z-10" />
         <img 
-          src="/assets/mechaholics_img4.jpeg" 
+          src={`${import.meta.env.BASE_URL}assets/mechaholics_img4.jpeg`} 
           alt="Hero Background" 
           className="w-full h-full object-cover opacity-60"
         />

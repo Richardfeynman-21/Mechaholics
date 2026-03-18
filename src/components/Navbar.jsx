@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const navLinks = [
   { name: 'ABOUT', href: '#about' },
@@ -55,12 +56,12 @@ const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
-          <a
-            href="/apply"
+          <Link
+            to="/apply"
             className="px-6 py-2 rounded-full bg-white text-black font-semibold text-sm tracking-wide hover:bg-gray-200 transition-colors"
           >
             APPLY NOW
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -94,16 +95,20 @@ const Navbar = () => {
                 {link.name}
               </motion.a>
             ))}
-            <motion.a
+            <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: navLinks.length * 0.1 }}
-                href="/apply"
-                onClick={() => setMobileMenuOpen(false)}
-                className="mt-4 px-8 py-3 rounded-full bg-orange-600 text-white font-semibold text-lg hover:bg-blue-700 transition-colors shadow-[0_0_20px_rgba(37,99,235,0.4)]"
+                className="mt-4"
             >
-              APPLY NOW
-            </motion.a>
+              <Link 
+                to="/apply"
+                onClick={() => setMobileMenuOpen(false)}
+                className="px-8 py-3 rounded-full bg-orange-600 text-white font-semibold text-lg hover:bg-orange-600 transition-colors shadow-[0_0_20px_rgba(255,107,0,0.4)] block"
+              >
+                APPLY NOW
+              </Link>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
